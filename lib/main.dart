@@ -354,6 +354,7 @@ class _BluetoothAppState extends State<BluetoothApp> {
     String message, [
     Duration duration = const Duration(seconds: 3),
   ]) async {
+    _scaffoldKey.currentState.hideCurrentSnackBar();
     _scaffoldKey.currentState.showSnackBar(
       new SnackBar(
         content: new Text(
